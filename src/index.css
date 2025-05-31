@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import "tailwindcss";
+
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+    --breakpoint-mobileS: 20rem;
+    --breakpoint-mobileM: 23.438rem;
+    --breakpoint-mobileG: 26.563rem;
+    --breakpoint-tabletS: 44.5rem;
+    --breakpoint-laptopS: 72.75rem;
+    --breakpoint-laptopM: 78.75rem;
+    --breakpoint-laptopG: 90rem;
+    --breakpoint-4xl: 160rem;
+
+    --font-baiJumjuree: 'Bai Jamjuree', serif;
+
+    --animate-animationRadar: animationRadar 4s linear infinite;
+    --animate-toLeft: toLeft 30s linear infinite;
+    --animate-toRight: toRight 30s linear infinite;
+}
+
+@keyframes animationRadar {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@keyframes toLeft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes toRight {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background: #12101B;
+    color: #E9E9EB;
+}
+
+
+/* react-slick */
+.slick-dots li button:before {
+    display: none;
+}
+
+.slick-dots li div {
+    background-color: #E9E9EB;
+    width: 12px;
+    height: 12px;
+    border-radius: 9999px;
+    transition: all 0.3s ease-in-out;
+}
+
+.slick-dots li.slick-active div {
+    background-color: #713FDF;
+    width: 14px;
+    height: 14px;
+}
