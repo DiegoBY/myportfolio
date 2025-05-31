@@ -1,3 +1,5 @@
+import imgPortfolio from '../../images/imgPortfolio.png';
+
 import Slider from 'react-slick';
 
 import 'slick-carousel/slick/slick.css';
@@ -69,6 +71,7 @@ function Work() {
                                 techs={['React', 'Typescript', 'Tailwind css']}
                                 isButton={false}
                                 isComing={false}
+                                img={imgPortfolio}
                             />
                             <WorkProject
                                 title="Em breve"

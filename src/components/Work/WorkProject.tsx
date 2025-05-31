@@ -1,6 +1,3 @@
-// Imgs
-import imgPortfolio from '../../images/imgPortfolio.png';
-
 interface WorkProjectProps {
     title: string;
     desc: string;
@@ -34,11 +31,7 @@ function WorkProject({
                     )}
 
                     <div className="w-full h-42 bg-blue-800">
-                        <img
-                            src={imgPortfolio}
-                            className="w-full h-full"
-                            alt={altImg}
-                        />
+                        <img src={img} className="w-full h-full" alt={altImg} />
                     </div>
                     <div className="border-y-2 border-[#703FDF] flex gap-x-4 p-2 text-[#E9E9EB] font-medium text-base mobileM:px-4 lg:px-2 2xl:px-4">
                         {techs.map((tech, index) => (

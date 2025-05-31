@@ -8,7 +8,7 @@ function Contact() {
     const [message, setMessage] = useState<string>('');
     let [formSuccess, setFormSuccess] = useState<string>('');
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: any) => {
         e.preventDefault();
 
         if (name === '' || email === '' || message === '') {
@@ -29,7 +29,7 @@ function Contact() {
                 'LurZvW2TXcUgzoWR-'
             )
             .then(
-                (response) => {
+                () => {
                     setFormSuccess('Enviado com Sucesso!');
                     setName('');
                     setEmail('');
@@ -39,7 +39,7 @@ function Contact() {
                         setFormSuccess('');
                     }, 5000);
                 },
-                (error) => {
+                () => {
                     setFormSuccess('Ocorreu um erro!');
                     setTimeout(() => {
                         setFormSuccess('');
