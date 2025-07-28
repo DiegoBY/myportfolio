@@ -6,6 +6,7 @@ interface WorkProjectProps {
     techs: string[];
     isButton: boolean;
     isComing: boolean;
+    href?: string;
 }
 
 function WorkProject({
@@ -16,6 +17,7 @@ function WorkProject({
     techs,
     isButton,
     isComing,
+    href,
 }: WorkProjectProps) {
     return (
         <>
@@ -44,10 +46,16 @@ function WorkProject({
                             {desc}
                         </p>
                         {isButton && isComing === false ? (
-                            <button className="w-42 my-4 relative group overflow-hidden border-2 border-[#713FDF] text-[#E9E9EB] px-6 py-2 font-medium group cursor-pointer tabletS:w-40 tabletS:h-10 tabletS:p-0">
-                                <span className="relative z-10">Ver Demo</span>
+                            <div className="flex justify-center items-center w-42 my-4 relative group overflow-hidden border-2 border-[#713FDF] text-[#E9E9EB] px-6 py-2 font-medium group cursor-pointer tabletS:w-40 tabletS:h-10 tabletS:p-0">
+                                <a
+                                    href={href}
+                                    target="_blank"
+                                    className="relative z-10"
+                                >
+                                    Ver Demo
+                                </a>
                                 <span className="w-full h-full flex absolute top-0 left-0 scale-x-0 origin-right transition-transform duration-300 ease-in group-hover:scale-x-100 group-hover:origin-left group-active:scale-x-100 group-active:origin-left bg-[#713FDF]"></span>
-                            </button>
+                            </div>
                         ) : (
                             <p className="font-bold text-xl my-4 text-[#703FDF]">
                                 Você está nele

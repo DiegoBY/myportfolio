@@ -1,4 +1,5 @@
 import imgPortfolio from '../../images/imgPortfolio.png';
+import imgMoovy from '../../images/imgMoovy.png';
 
 import Slider from 'react-slick';
 
@@ -74,12 +75,14 @@ function Work() {
                                 img={imgPortfolio}
                             />
                             <WorkProject
-                                title="Em breve"
-                                desc="Projeto em Construção"
-                                altImg="Em Breve"
-                                techs={['Em Breve']}
+                                title="Moovy"
+                                desc="Projeto funcional que conecta à API da TMDB para mostrar filmes em cartaz, trailers e detalhes. Ainda em ajustes, mas já com banner rotativo e seção de recomendados. Voo decolando rumo a melhorias, fique ligado!"
+                                altImg="Moovy banner"
+                                techs={['React', 'Typescript', 'Tailwind css']}
                                 isButton={true}
-                                isComing={true}
+                                isComing={false}
+                                img={imgMoovy}
+                                href="https://moovy-app.vercel.app/"
                             />
                             <WorkProject
                                 title="Em breve"
