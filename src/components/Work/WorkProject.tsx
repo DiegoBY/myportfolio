@@ -7,6 +7,7 @@ interface WorkProjectProps {
     isButton: boolean;
     isComing: boolean;
     href?: string;
+    isDev: boolean;
 }
 
 function WorkProject({
@@ -18,6 +19,7 @@ function WorkProject({
     isButton,
     isComing,
     href,
+    isDev,
 }: WorkProjectProps) {
     return (
         <>
@@ -45,6 +47,15 @@ function WorkProject({
                         <p className="font-normal text-[#88869B] text-sm">
                             {desc}
                         </p>
+
+                        {isDev ? (
+                            <p className="font-semibold text-[#703FDF] text-sm my-2 tracking-[2px]">
+                                Em desenvolvimento
+                            </p>
+                        ) : (
+                            ''
+                        )}
+
                         {isButton && isComing === false ? (
                             <div className="flex justify-center items-center w-42 my-4 relative group overflow-hidden border-2 border-[#713FDF] text-[#E9E9EB] px-6 py-2 font-medium group cursor-pointer tabletS:w-40 tabletS:h-10 tabletS:p-0">
                                 <a
@@ -52,7 +63,7 @@ function WorkProject({
                                     target="_blank"
                                     className="relative z-10"
                                 >
-                                    Ver Demo
+                                    Embarcar
                                 </a>
                                 <span className="w-full h-full flex absolute top-0 left-0 scale-x-0 origin-right transition-transform duration-300 ease-in group-hover:scale-x-100 group-hover:origin-left group-active:scale-x-100 group-active:origin-left bg-[#713FDF]"></span>
                             </div>

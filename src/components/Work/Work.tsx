@@ -73,6 +73,7 @@ function Work() {
                                 isButton={false}
                                 isComing={false}
                                 img={imgPortfolio}
+                                isDev={false}
                             />
                             <WorkProject
                                 title="Moovy"
@@ -83,6 +84,7 @@ function Work() {
                                 isComing={false}
                                 img={imgMoovy}
                                 href="https://moovy-app.vercel.app/"
+                                isDev={true}
                             />
                             <WorkProject
                                 title="Em breve"
@@ -91,6 +93,7 @@ function Work() {
                                 techs={['Em Breve']}
                                 isButton={true}
                                 isComing={true}
+                                isDev={false}
                             />
                         </Slider>
                     </div>
