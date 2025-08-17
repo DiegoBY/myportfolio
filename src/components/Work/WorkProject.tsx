@@ -49,9 +49,9 @@ function WorkProject({
                         </p>
 
                         {isDev ? (
-                            <p className="font-semibold text-[#703FDF] text-sm my-2 tracking-[2px]">
-                                Em desenvolvimento
-                            </p>
+                            <div className="font-semibold text-[#703FDF] text-sm my-2 tracking-[2px]">
+                                <p>Em desenvolvimento</p>
+                            </div>
                         ) : (
                             ''
                         )}

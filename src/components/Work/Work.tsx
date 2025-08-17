@@ -77,7 +77,7 @@ function Work() {
                             />
                             <WorkProject
                                 title="Moovy"
-                                desc="Projeto funcional que conecta à API da TMDB para mostrar filmes em cartaz, trailers e detalhes. Ainda em ajustes, mas já com banner rotativo e seção de recomendados. Voo decolando rumo a melhorias, fique ligado!"
+                                desc="Projeto em desenvolvimento, atualmente passando por uma reconstrução completa. No momento, conta apenas com a interface mobile e a lógica ainda não foi implementada."
                                 altImg="Moovy banner"
                                 techs={['React', 'Typescript', 'Tailwind css']}
                                 isButton={true}
