@@ -37,7 +37,7 @@ Clone o repositório e rode o projeto em sua máquina 👇
 
 ```bash
 # Clone o repositório
-git clone https://github.com/DiegoBY/portfolio.git
+git clone https://github.com/DiegoBY/myportfolio.git
 
 # Entre na pasta
 cd portfolio
