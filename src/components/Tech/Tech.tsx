@@ -1,3 +1,6 @@
+import LineForComponents from '../LineForComponents/LineForComponents';
+import TitleSections from '../TitleSections/TitleSections';
+
 const technologies = [
     'HTML5',
     'CSS3',
@@ -35,16 +38,7 @@ function Tech() {
                 id="skills"
                 className="scroll-mt-24 lg:scroll-mt-32 my-10 px-5 tabletS:px-14 lg:px-24 laptopS:px-36 laptopM:px-60 2xl:px-96 4xl:px-[40rem]"
             >
-                <div>
-                    <p className="text-[#E9E9EB] text-3xl font-bold">
-                        <span className="text-[#703FDF] selection:bg-[#703FDF] selection:text-[#E9E9EB]">
-                            #
-                        </span>
-                        <span className="selection:bg-[#E9E9EB] selection:text-[#703FDF]">
-                            Skills
-                        </span>
-                    </p>
-                </div>
+                <TitleSections titleSection="Skills" />
 
                 {/* Carousel */}
                 <div className="select-none text-[#E9E9EB] font-bold">
@@ -79,7 +73,7 @@ function Tech() {
                     </div>
                 </div>
             </section>
-            <div className="w-full h-0.5 bg-[#594F6E]"></div>
+            <LineForComponents />
         </>
     );
 }

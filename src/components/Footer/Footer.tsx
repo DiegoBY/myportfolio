@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import LineForComponents from '../LineForComponents/LineForComponents';
 
 function Footer() {
     return (
@@ -47,7 +48,7 @@ function Footer() {
                     <p className="mt-5 italic">Até a próxima decolagem…</p>
                 </div>
             </footer>
-            <div className="w-full h-0.5 bg-[#594F6E]"></div>
+            <LineForComponents />
         </>
     );
 }

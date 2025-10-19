@@ -1,11 +1,13 @@
 import imgPortfolio from '../../images/imgPortfolio.png';
-import imgMoovy from '../../images/imgMoovy.png';
+import imgMoovy from '../../images/imgMoovy2.png';
 
 import Slider from 'react-slick';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import WorkProject from './WorkProject';
+import TitleSections from '../TitleSections/TitleSections';
+import LineForComponents from '../LineForComponents/LineForComponents';
 
 function Work() {
     // Carousel
@@ -49,16 +51,8 @@ function Work() {
                 id="projects"
                 className="scroll-mt-24 lg:scroll-mt-32 my-10 px-5 tabletS:px-14 lg:px-24 lg:mb-0 laptopS:px-36 laptopM:px-60 2xl:px-96 4xl:px-[40rem]"
             >
-                <div>
-                    <p className="text-[#E9E9EB] text-3xl font-bold">
-                        <span className="text-[#703FDF] selection:bg-[#703FDF] selection:text-[#E9E9EB]">
-                            #
-                        </span>
-                        <span className="selection:bg-[#E9E9EB] selection:text-[#703FDF] ">
-                            Projetos
-                        </span>
-                    </p>
-                </div>
+                {/* Title Section */}
+                <TitleSections titleSection="Projetos" />
 
                 <div className="mt-10 w-full h-[32rem] flex justify-center lg:h-[35rem]">
                     <div className="slider-container w-full ">
@@ -99,7 +93,7 @@ function Work() {
                     </div>
                 </div>
             </section>
-            <div className="w-full h-0.5 bg-[#594F6E]"></div>
+            <LineForComponents />
         </>
     );
 }
