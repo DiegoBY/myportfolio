@@ -6,11 +6,14 @@ import About from './components/About/About';
 import Tech from './components/Tech/Tech';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import LoadingPortfolio from './components/LoadingPortfolio/LoadingPortfolio';
 
 function App() {
     return (
         <>
             <main className="relative font-baiJumjuree">
+                <LoadingPortfolio />
+
                 <Header />
                 <HomePage />
                 <DisplayCode />

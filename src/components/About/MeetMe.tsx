@@ -10,7 +10,7 @@ function MeetMe() {
 
                     <p>
                         Quando não tô mergulhado em linhas de código, tô voando
-                        baixo pelos vídeos de pouso em Guarulhos — sonhando
+                        baixo pelos vídeos de pouso em Guarulhos, sonhando
                         acordado com os motores, front bem pensado são ideias
                         que decolam.
                     </p>

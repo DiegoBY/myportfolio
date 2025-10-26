@@ -1,5 +1,5 @@
 import imgPortfolio from '../../images/imgPortfolio.png';
-import imgMoovy from '../../images/imgMoovy2.png';
+import imgMoovy from '../../images/imgMoovy.png';
 
 import Slider from 'react-slick';
 
@@ -35,6 +35,15 @@ function Work() {
                     slidesToScroll: 1,
                 },
             },
+
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+
             {
                 breakpoint: 1023,
                 settings: {
@@ -63,21 +72,22 @@ function Work() {
                                 title="Portfolio"
                                 desc="Meu portfólio é um espaço onde mostro minha evolução como Desenvolvedor Front-End, com projetos que unem design criativo, código limpo e interatividade."
                                 altImg="Representação visual do portfólio de Diego Santos: tecnologia, criatividade e um avião de papel rumo ao céu."
-                                techs={['React', 'Typescript', 'Tailwind css']}
-                                isButton={false}
+                                techs={['React', 'Typescript', 'Tailwind CSS']}
                                 isComing={false}
                                 img={imgPortfolio}
+                                hrefDeploy="https://devdiegosantos.vercel.app/"
+                                hrefGitHub="https://github.com/DiegoBY/myportfolio"
                                 isDev={false}
                             />
                             <WorkProject
                                 title="Moovy"
                                 desc="Projeto em desenvolvimento, atualmente passando por uma reconstrução completa. No momento, conta apenas com a interface mobile e a lógica ainda não foi implementada."
                                 altImg="Moovy banner"
-                                techs={['React', 'Typescript', 'Tailwind css']}
-                                isButton={true}
+                                techs={['React', 'Typescript', 'Tailwind CSS']}
                                 isComing={false}
                                 img={imgMoovy}
-                                href="https://moovy-app.vercel.app/"
+                                hrefDeploy="https://moovy-app.vercel.app/"
+                                hrefGitHub="https://github.com/DiegoBY/moovy"
                                 isDev={true}
                             />
                             <WorkProject
@@ -85,7 +95,6 @@ function Work() {
                                 desc="Projeto em Construção"
                                 altImg="Em Breve"
                                 techs={['Em Breve']}
-                                isButton={true}
                                 isComing={true}
                                 isDev={false}
                             />

@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import LineForComponents from '../LineForComponents/LineForComponents';
+import SocialMedia from '../SocialMedia/SocialMedia';
 
 function Footer() {
     return (
@@ -19,25 +19,7 @@ function Footer() {
                     </h1>
                 </div>
 
-                <div className="flex justify-center gap-x-8 mt-5">
-                    <a
-                        href="https://www.instagram.com/diegosantos_cr/"
-                        target="_blank"
-                    >
-                        <FaInstagram className="text-[#7543DE] w-10 h-10 transition duration-300 ease-in-out hover:text-[#E9E9EB] hover:scale-105" />
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/diego-santos-8055bb288/"
-                        target="_blank"
-                    >
-                        <FaLinkedinIn className="text-[#7543DE] w-10 h-10 transition duration-300 ease-in-out hover:text-[#E9E9EB] hover:scale-105" />
-                    </a>
-
-                    <a href="https://github.com/DiegoBY" target="_blank">
-                        <FaGithub className="text-[#7543DE] w-10 h-10 transition duration-300 ease-in-out hover:text-[#E9E9EB] hover:scale-105" />
-                    </a>
-                </div>
+                <SocialMedia />
 
                 <div className="text-[#847EA4] text-base font-normal text-center selection:bg-[#E9E9EB] selection:text-[#7543DE]">
                     <p className="mt-10">

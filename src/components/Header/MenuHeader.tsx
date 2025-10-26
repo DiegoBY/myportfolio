@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+
 import { MenuItem } from '../../types/MenuItem';
+import SocialMedia from '../SocialMedia/SocialMedia';
 
 const menuItems: MenuItem[] = [
     { label: 'Home', href: '#homePage' },
@@ -96,10 +97,10 @@ function MenuHeader() {
                                         });
                                     }
                                 }}
-                                className={`font-bold text-xl cursor-pointer pb-1 block selection:bg-[#7543DE] ${
+                                className={`font-bold text-xl cursor-pointer pb-1 block selection:bg-[#7543DE] transition-all ease-in duration-200  ${
                                     activeIndex === index
                                         ? 'text-[#7543DE] selection:bg-[#E9E9EB]'
-                                        : 'text-[#E9E9EB]'
+                                        : 'text-[#E9E9EB] hover:-translate-y-1'
                                 }`}
                             >
                                 {item.label}
@@ -181,26 +182,8 @@ function MenuHeader() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 10 }}
                             transition={{ delay: 0.6 }}
-                            className="flex gap-x-6"
                         >
-                            <a
-                                href="https://www.instagram.com/diegosantos_cr/"
-                                target="_blank"
-                            >
-                                <FaInstagram className="text-[#7543DE] w-8 h-8 transition duration-300 ease-in-out hover:text-[#E9E9EB] hover:scale-105" />
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/in/diego-santos-8055bb288/"
-                                target="_blank"
-                            >
-                                <FaLinkedinIn className="text-[#7543DE] w-8 h-8 transition duration-300 ease-in-out hover:text-[#E9E9EB] hover:scale-105" />
-                            </a>
-                            <a
-                                href="https://github.com/DiegoBY"
-                                target="_blank"
-                            >
-                                <FaGithub className="text-[#7543DE] w-8 h-8 transition duration-300 ease-in-out hover:text-[#E9E9EB] hover:scale-105" />
-                            </a>
+                            <SocialMedia />
                         </motion.div>
                     </motion.div>
                 )}
