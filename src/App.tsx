@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import * as motion from 'motion/react-client';
 
 import Header from './components/Header/Header';
 import HomePage from './components/HomePage/HomePage';
@@ -26,7 +27,17 @@ function App() {
             <main className="relative font-baiJumjuree">
                 <LoadingPortfolio />
 
-                <div className={`${fakeLoading}`}>
+                <motion.div
+                    className={`${fakeLoading}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                        duration: 5,
+                        type: 'spring',
+                        bounce: 0.2,
+                        delay: 5.6,
+                    }}
+                >
                     <Header />
                     <HomePage />
                     <DisplayCode />
@@ -35,7 +46,7 @@ function App() {
                     <Tech />
                     <Contact />
                     <Footer />
-                </div>
+                </motion.div>
             </main>
         </>
     );
