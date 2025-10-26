@@ -47,10 +47,10 @@ function LoadingPortfolio() {
                     className="w-22 h-22 text-[#7543DE] animate-pulse "
                 />
 
-                <p className="text-xl mt-5 mb-2 text-[#E9E9EB]">{status}</p>
+                <p className="text-xl mt-10 mb-2 text-[#E9E9EB]">{status}</p>
 
                 {/* Bar Progress */}
-                <div className="relative w-[50%] h-1 rounded-xs bg-[#E9E9EB]/20">
+                <div className="relative w-[50%] h-1 rounded-xs bg-[#E9E9EB]/20 lg:w-[20%]">
                     <div
                         className={`absolute left-0 top-0 z-20  h-full bg-[#7543DE] rounded-xs transition-all duration-200`}
                         style={{ width: `${progress}%` }}
