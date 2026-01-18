@@ -23,7 +23,7 @@ function Footer() {
 
                 <div className="text-[#847EA4] text-base font-normal text-center selection:bg-[#E9E9EB] selection:text-[#7543DE]">
                     <p className="mt-10">
-                        © 2025 Diego Santos. Código com turbulência, mas pouso
+                        © 2026 Diego Santos. Código com turbulência, mas pouso
                         suave.
                     </p>
 
