@@ -9,9 +9,7 @@
 
 ## 📸 Preview
 
-![Portfolio Preview](<img width="1912" height="4019" alt="pc" src="https://github.com/user-attachments/assets/1cd7db1d-7e8c-4a11-a755-e2db302ac74f" /><img width="382" height="4157" alt="mobile" src="https://github.com/user-attachments/assets/43e5633d-7d27-434f-935b-02f99e1b023f" />
-
-)
+<img width="1912" height="4019" alt="pc" src="https://github.com/user-attachments/assets/824e6e5d-62e0-4e62-a186-f494780c7fc6" />
 
 ---
 
